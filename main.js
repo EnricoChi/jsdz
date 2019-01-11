@@ -8,7 +8,7 @@
  */
 
 let tc = prompt('Температура °C'),
-    tf = (9 / 5) * tc + 32;
+  tf = (9 / 5) * tc + 32;
 alert(`Температура ${tc}°С == ${tf}°F`);
 
 
@@ -62,26 +62,26 @@ console.log(10 / +"2,5"); // NaN - знак "," не даст привести �
  */
 
 let ticket_str = prompt('Номер билета - 6 цифр'),
-    num = +ticket_str,
-    left_num = null,
-    right_num = null,
-    num_prop = 'обычный';
+  num = +ticket_str,
+  left_num = null,
+  right_num = null,
+  num_prop = 'обычный';
 
 for (let i = 0; i < 6; i++) {
 
-    num = i !== 0 ? num / 10 : num;
+  num = i !== 0 ? num / 10 : num;
 
-    let result = parseInt(num) % 10;
+  let result = parseInt(num) % 10;
 
-    if (i < 3) {
-        right_num += result;
-    } else {
-        left_num += result;
-    }
+  if (i < 3) {
+    right_num += result;
+  } else {
+    left_num += result;
+  }
 }
 
 if (right_num === left_num) {
-    num_prop = 'счастливый';
+  num_prop = 'счастливый';
 }
 
 console.log(`Решение 1: Билет №${ticket_str} - ${num_prop}`);
@@ -94,18 +94,18 @@ console.log(`Решение 1: Билет №${ticket_str} - ${num_prop}`);
  */
 
 let ticket = prompt('Номер билета - 6 цифр'),
-    left = counting(ticket.slice(0, 3)),
-    right = counting(ticket.slice(3, 6)),
-    ticket_prop = 'обычный';
+  left = counting(ticket.slice(0, 3)),
+  right = counting(ticket.slice(3, 6)),
+  ticket_prop = 'обычный';
 
 if (left === right) {
-    ticket_prop = 'счастливый';
+  ticket_prop = 'счастливый';
 }
 
 function counting(part) {
-    const reducer = (accumulator, currentValue) => +accumulator + +currentValue;
-    part = part.split('');
-    return part.reduce(reducer);
+  const reducer = (accumulator, currentValue) => +accumulator + +currentValue;
+  part = part.split('');
+  return part.reduce(reducer);
 }
 
 console.log(`Решение 2: Билет №${ticket} - ${ticket_prop}`);
