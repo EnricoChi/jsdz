@@ -6,15 +6,18 @@
  * @param {number} tf Расчет по формуле в зависимости от tc, °F
  * @return {number} tf °F
  */
+
 let tc = prompt('Температура °C'),
     tf = (9 / 5) * tc + 32;
 alert(`Температура ${tc}°С == ${tf}°F`);
+
 
 /**
  * Задание 2
  * @param {string} name const
  * @param {undefined} admin == name
  */
+
 const name = 'Василий';
 let admin;
 
@@ -106,6 +109,3 @@ function counting(part) {
 }
 
 console.log(`Решение 2: Билет №${ticket} - ${ticket_prop}`);
-
-
-
