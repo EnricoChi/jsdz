@@ -6,7 +6,6 @@
  * @param {number} tf Расчет по формуле в зависимости от tc, °F
  * @return {number} tf °F
  */
-
 let tc = prompt('Температура °C'),
   tf = (9 / 5) * tc + 32;
 alert(`Температура ${tc}°С == ${tf}°F`);
@@ -17,7 +16,6 @@ alert(`Температура ${tc}°С == ${tf}°F`);
  * @param {string} name const
  * @param {undefined} admin == name
  */
-
 const name = 'Василий';
 let admin;
 
@@ -28,7 +26,6 @@ console.log(`Админ - ${admin}`);
 /**
  * Задание 3
  */
-
 console.log(10 + 10 + "10"); // 2010 - сложение двух чисел и строки
 console.log(10 + "10" + 10); // 101010 - число + строка + число
 console.log(10 + 10 + +"10"); // 30 - число + число + (+строка=приведение к числу)
@@ -60,7 +57,6 @@ console.log(10 / +"2,5"); // NaN - знак "," не даст привести �
  * @param {string} num_prop покажет результат
  *
  */
-
 let ticket_str = prompt('Номер билета - 6 цифр'),
   num = +ticket_str,
   left_num = null,
@@ -92,7 +88,6 @@ console.log(`Решение 1: Билет №${ticket_str} - ${num_prop}`);
  * @param {string} ticket 6-ти значной номер вводимый с клавиатуры
  * @param {object} {function} reducer https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
  */
-
 let ticket = prompt('Номер билета - 6 цифр'),
   left = counting(ticket.slice(0, 3)),
   right = counting(ticket.slice(3, 6)),
