@@ -12,7 +12,6 @@ function multiplication(a, b) {
   return a * b;
 }
 
-
 function difference(a, b) {
   return a - b;
 }

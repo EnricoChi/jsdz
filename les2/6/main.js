@@ -10,7 +10,7 @@ const money = +prompt('Введите число'),
 
 /**
  *
- * @param {number } money
+ * @param {number} money
  * @let {number} num - ищем последнюю цифру в money
  * @let {string} rub - меняем в зависимости от num
  * @return {string}
