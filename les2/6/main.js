@@ -16,7 +16,7 @@ const money = +prompt('Введите число'),
  * @return {string}
  */
 function rub_ending(money) {
-  let last_num = money % 100 % 10,
+  let last_num = money % 10,
     rub = 'рублей';
 
   if (last_num > 1 && last_num < 5) {
