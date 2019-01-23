@@ -42,6 +42,7 @@ const player = {
   move(direction) {
     // Определяем направление и обновляем местоположение игрока в зависимости от направления.
 
+    /* Дз */
     const increaseX = game.settings.colsCount - (this.x + 1) > game.settings.startPositionX,
       decreaseX = this.x > game.settings.startPositionX,
       increaseY = game.settings.rowsCount - (this.y + 1) > game.settings.startPositionY,
