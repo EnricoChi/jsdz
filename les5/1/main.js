@@ -17,7 +17,7 @@ const settings = {
 };
 
 const chessPieces = {
-  pawn: {
+  pawns: {
     w: {
       code: '&#9817;',
       pos: {
@@ -65,7 +65,7 @@ const chessPieces = {
       }
     }
   },
-  horse: {
+  horses: {
     w: {
       code: '&#9816;',
       pos: {
@@ -81,7 +81,7 @@ const chessPieces = {
       }
     }
   },
-  bishop: {
+  bishops: {
     w: {
       code: '&#9814;',
       pos: {
@@ -97,7 +97,7 @@ const chessPieces = {
       }
     }
   },
-  knight: {
+  knights: {
     w: {
       code: '&#9815;',
       pos: {
@@ -134,7 +134,7 @@ const board = {
     for (let figure in this.chessPieces) {
       // Пока не найдем опции его свойства и продолжим их итерировать
       for (let options in this.chessPieces[figure]) {
-        
+
         // Для удобства вытащим позиции из свойсвт
         let posX = this.chessPieces[figure][options].pos.x,
           posY = this.chessPieces[figure][options].pos.y,
