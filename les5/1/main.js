@@ -123,7 +123,7 @@ const board = {
   boardWrapper: null,
 
   isColored(rowNum, colNum) {
-    return (rowNum + colNum) % 2
+    return !((rowNum + colNum) % 2)
   },
   init() {
     this.boardWrapper = document.getElementById('board');
