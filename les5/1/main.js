@@ -132,8 +132,9 @@ const board = {
   searchChessPieces(rowNum, colNum) {
     // Будем итерировать объект до посинения
     for (let figure in this.chessPieces) {
-      // Пока не найдем опции его свойства
+      // Пока не найдем опции его свойства и продолжим их итерировать
       for (let options in this.chessPieces[figure]) {
+        
         // Для удобства вытащим позиции из свойсвт
         let posX = this.chessPieces[figure][options].pos.x,
           posY = this.chessPieces[figure][options].pos.y,
