@@ -130,7 +130,7 @@ const board = {
     this.renderBoard();
   },
   searchChessPieces(rowNum, colNum) {
-    // Будем итерировать обьект до посинения
+    // Будем итерировать объект до посинения
     for (let figure in this.chessPieces) {
       // Пока не найдем опции его свойства
       for (let options in this.chessPieces[figure]) {
