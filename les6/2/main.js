@@ -50,7 +50,7 @@ const basket = {
     localStorage.setItem('goods', JSON.stringify(this.goods));
   },
   /**
-   * Забираем товары из localStorage, если они там есть
+   * Забираем товары из localStorage
    */
   loadGoodsOfStorage() {
     this.goods = JSON.parse(localStorage.getItem('goods'));
