@@ -25,7 +25,7 @@ const basket = {
     document
       .querySelectorAll(this.settings.button)
       .forEach(item => item.addEventListener(
-        'click', (event) => this.add(event.target.dataset.name, event.target.dataset.price)));
+        'click', (event) => this.add(event.target.dataset.name, event.target.dataset.price))); // Оверхед?
 
     if ('goods' in localStorage) {
       this.loadGoodsOfStorage();
