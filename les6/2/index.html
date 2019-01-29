@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-size: 18px;
+        }
+
+        #goods-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            margin: 20px;
+            background: #ededed;
+        }
+
+        .item-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        button {
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        #cart {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="goods-wrapper">
+    <div id="item-1" class="item">
+        <img src="https://via.placeholder.com/250.gif/c8efd4/085820?text=Item+1" alt="">
+        <div class="item-info">
+            <div>Price: 150$</div>
+            <button data-price="150" data-name="item1" class="add-to-cart">Buy</button>
+        </div>
+    </div>
+    <div id="item-2" class="item">
+        <img src="https://via.placeholder.com/250.gif/c8efd4/085820?text=Item+2" alt="">
+        <div class="item-info">
+            <div>Price: 20$</div>
+            <button data-price="20" data-name="item2" class="add-to-cart">Buy</button>
+        </div>
+    </div>
+    <div id="item-3" class="item">
+        <img src="https://via.placeholder.com/250.gif/c8efd4/085820?text=Item+3" alt="">
+        <div class="item-info">
+            <div>Price: 333$</div>
+            <button data-price="333" data-name="item2" class="add-to-cart">Buy</button>
+        </div>
+    </div>
+</div>
+<div id="cart">
+    Total items: <span id="total-items">0</span><br>
+    Total price: <span id="total-price">0</span>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
